@@ -1,26 +1,26 @@
-import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import { Button, buttonVariants } from "@/components/ui/button";
-import { ArrowDownToLine, CheckCircle, Leaf } from "lucide-react";
-import Link from "next/link";
+import MaxWidthWrapper from '@/components/MaxWidthWrapper';
+import { Button, buttonVariants } from '@/components/ui/button';
+import { ArrowDownToLine, CheckCircle, Leaf } from 'lucide-react';
+import Link from 'next/link';
 
 const perks = [
   {
-    name: "Instant Delivery",
+    name: 'Instant Delivery',
     Icon: ArrowDownToLine,
     description:
-      "Get your assets delivered to your email in seconds and download them right away.",
+      'Receive your digital content directly in your inbox within moments, ready for immediate download.',
   },
   {
-    name: "Guaranteed Quality",
+    name: 'Guaranteed Quality',
     Icon: CheckCircle,
     description:
-      "Every asset on our platform is verified by our team to ensure our highest quality standards. Not happy we offer a 30-day refund guarantee",
+      "  Each item on our platform undergoes rigorous verification by our experts to meet our superior quality criteria. If you're not satisfied, we provide a 30-day money-back guarantee.",
   },
   {
-    name: "For the Planet",
+    name: 'For the Planet',
     Icon: Leaf,
     description:
-      "We 've pledged 1% of sales to the preservation and restoration of the natural environment.",
+      "We've committed 1% of our sales to the conservation and rejuvenation of the natural world.",
   },
 ];
 
@@ -30,12 +30,13 @@ export default function Home() {
       <MaxWidthWrapper>
         <div className=' py-20 mx-auto text-center flex flex-col items-center max-w-3xl'>
           <h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
-            Your marketplace for high-quality{" "}
-            <span className=' text-violet-600'>digital assets</span>.
+            Your hub for exclusive, high-quality{' '}
+            <span className=' text-violet-600'>digital creations</span>.
           </h1>
           <p className=' mt-6 text-lg max-w-prose text-muted-foreground '>
-            Welcome to DigitalShop. Every asset on our platforms is verified by
-            our team to ensure our highest quality standards.
+            Discover VirtualMarket Hub, where every digital asset is
+            meticulously examined by our dedicated team, ensuring they meet our
+            exceptional quality benchmarks.
           </p>
           <div className=' flex flex-col sm:flex-row gap-4 mt-6'>
             <Link href='/products' className={buttonVariants()}>
